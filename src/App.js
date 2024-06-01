@@ -15,11 +15,14 @@ const MainTitleText = styled.p`
 function App(props) {
   return (
     <BrowserRouter>
-      <MainTitleText>소플의 미니 블로그</MainTitleText>
+      {/* <MainTitleText>소플의 미니 블로그</MainTitleText> */}
+      <div className="App"></div>
       <Routes>
-        <Route index element={<MainPage />} />
-        <Route path="post-write" element={<PostWritePage />} />
-        <Route path="post/:postId" element={<PostViewPage />} />
+        {/* <Route index element={<MainPage />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/me" element={<Me />} />
+        <Route path="project" element={<Project />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
