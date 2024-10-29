@@ -1,6 +1,6 @@
 # Dev_Portfolio
 
-# React + Java(예정)
+# React + V0을 이용한 UI 개발.
 
 # Getting Started with Create React App
 
