@@ -9,3 +9,4 @@
 - 테스트: Jest, Vitest
 - CI/CD: GitHub Actions
 - Emotion, MSW, Playwright, Zustand, swc, pnpm, Supabase
+- (jotai는?)
