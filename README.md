@@ -10,3 +10,4 @@
 - CI/CD: GitHub Actions
 - Emotion, MSW, Playwright, Zustand, swc, pnpm, Supabase
 - (jotai는?)
+- SEO 최적화
