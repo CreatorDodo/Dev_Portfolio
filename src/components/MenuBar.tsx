@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
-const MenuBar = () => {
+function MenuBar() {
   const navigate = useNavigate();
   return (
     <div className="Menubar">
@@ -48,6 +48,6 @@ const MenuBar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default MenuBar;

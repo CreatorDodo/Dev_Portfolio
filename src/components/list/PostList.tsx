@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import PostListItem from "./PostListItem";
+import React from 'react';
+import styled from 'styled-components';
+import PostListItem from './PostListItem';
 
 const Wrapper = styled.div`
   display: flex;
