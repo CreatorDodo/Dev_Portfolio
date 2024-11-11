@@ -4,7 +4,7 @@
 
 - React, TypeScript, Next.js, (Nest.js는?)
 - 상태 관리: React-Query, Recoil
-- 패키지 매니저: Yarn Berry, Pnpm
+- 패키지 매니저: Pnpm
 - 빌드: Webpack, ESBuild, SWC, Babel
 - 테스트: Jest
 - CI/CD: GitHub Actions
