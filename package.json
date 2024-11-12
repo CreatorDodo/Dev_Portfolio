@@ -1,6 +1,7 @@
 {
   "name": "dev_portfolio",
   "version": "1.0.0",
+  "type": "module",
   "description": "- React, TypeScript, Next.js, (Nest.js는?)\r - 상태 관리: React-Query, Recoil\r - 패키지 매니저: Yarn Berry, Pnpm\r - 빌드: Webpack, ESBuild, SWC, Babel\r - 테스트: Jest, Vitest\r - CI/CD: GitHub Actions\r - Emotion, MSW, Playwright, Zustand, swc, pnpm, Supabase\r - (jotai는?)\r - SEO 최적화\r - AWS, Vercel, (데이터독은?)",
   "main": "index.js",
   "private": true,
