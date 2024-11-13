@@ -11,6 +11,7 @@ export default function PrePortfolioPage() {
                   <img
                     className="Image absolute left-[4.36px] top-[4.36px] h-20 w-20 rounded-full"
                     src="https://via.placeholder.com/87x87"
+                    alt="User Avatar"
                   />
                 </div>
                 <div className="Code absolute left-[78px] top-[78px] inline-flex h-8 w-8 items-center justify-center px-px py-1" />
@@ -18,13 +19,40 @@ export default function PrePortfolioPage() {
               <div className="Text flex h-40 flex-col items-center justify-start gap-5 self-stretch">
                 <div className="Title flex h-24 flex-col items-center justify-start gap-2 self-stretch">
                   <div className="HelloWorldMeuNomeMartinaSantosESou self-stretch text-center">
-                    <span style="text-neutral-300 text-xl font-normal font-['Inconsolata'] leading-normal">
+                    <span
+                      style={{
+                        color: 'neutral-300',
+                        fontSize: '1.25rem',
+                        fontWeight: 'normal',
+                        fontFamily: 'Inconsolata',
+                        lineHeight: 'normal',
+                      }}
+                    >
                       Hello World! Meu nome é{' '}
                     </span>
-                    <span style="text-red-400 text-xl font-normal font-['Inconsolata'] leading-normal">
+                    <span
+                      style={{
+                        color: 'red',
+                        fontSize: '1.25rem',
+                        fontWeight: 'normal',
+                        fontFamily: 'Inconsolata',
+                        lineHeight: 'normal',
+                      }}
+                    >
                       Martina Santos
                     </span>
-                    <span style="text-neutral-300 text-xl font-normal font-['Inconsolata'] leading-normal"> e sou</span>
+                    <span
+                      style={{
+                        color: 'neutral-300',
+                        fontSize: '1.25rem',
+                        fontWeight: 'normal',
+                        fontFamily: 'Inconsolata',
+                        lineHeight: 'normal',
+                      }}
+                    >
+                      {' '}
+                      e sou
+                    </span>
                   </div>
                   <div className="DesenvolvedoraFullstack self-stretch text-center font-['Asap'] text-6xl font-bold leading-10 text-zinc-200">
                     Desenvolvedora Fullstack
@@ -88,7 +116,11 @@ export default function PrePortfolioPage() {
           </div>
           <div className="Grid inline-flex w-96 items-start justify-center gap-6">
             <div className="Projectcard inline-flex h-72 w-80 flex-col items-center justify-start gap-5 rounded-xl bg-gray-800 p-3">
-              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" />
+              <img
+                className="Image2 h-40 w-80 rounded-lg"
+                src="https://via.placeholder.com/306x156"
+                alt="Travelgram project screenshot"
+              />
               <div className="Text flex h-20 flex-col items-center justify-start gap-2 self-stretch p-1">
                 <div className="Title self-stretch font-['Asap'] text-base font-bold leading-tight text-zinc-200">
                   Travelgram
@@ -99,7 +131,11 @@ export default function PrePortfolioPage() {
               </div>
             </div>
             <div className="Projectcard inline-flex h-72 w-80 flex-col items-center justify-start gap-5 rounded-xl bg-gray-800 p-3">
-              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" />
+              <img
+                className="Image2 h-40 w-80 rounded-lg"
+                src="https://via.placeholder.com/306x156"
+                alt="Screenshot of the project"
+              />
               <div className="Text flex h-20 flex-col items-center justify-start gap-2 self-stretch p-1">
                 <div className="Title self-stretch font-['Asap'] text-base font-bold leading-tight text-zinc-200">
                   Zingen
@@ -110,7 +146,7 @@ export default function PrePortfolioPage() {
               </div>
             </div>
             <div className="Projectcard inline-flex h-72 w-80 flex-col items-center justify-start gap-5 rounded-xl bg-gray-800 p-3">
-              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" />
+              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" alt="Image2" />
               <div className="Text flex h-20 flex-col items-center justify-start gap-2 self-stretch p-1">
                 <div className="Title self-stretch font-['Asap'] text-base font-bold leading-tight text-zinc-200">
                   Tech News
@@ -121,7 +157,7 @@ export default function PrePortfolioPage() {
               </div>
             </div>
             <div className="Projectcard inline-flex h-72 w-80 flex-col items-center justify-start gap-5 rounded-xl bg-gray-800 p-3">
-              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" />
+              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" alt="Image3" />
               <div className="Text flex h-20 flex-col items-center justify-start gap-2 self-stretch p-1">
                 <div className="Title self-stretch font-['Asap'] text-base font-bold leading-tight text-zinc-200">
                   Refund
@@ -132,7 +168,7 @@ export default function PrePortfolioPage() {
               </div>
             </div>
             <div className="Projectcard inline-flex h-72 w-80 flex-col items-center justify-start gap-5 rounded-xl bg-gray-800 p-3">
-              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" />
+              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" alt="Image4" />
               <div className="Text flex h-20 flex-col items-center justify-start gap-2 self-stretch p-1">
                 <div className="Title self-stretch font-['Asap'] text-base font-bold leading-tight text-zinc-200">
                   Página de receita
@@ -143,7 +179,7 @@ export default function PrePortfolioPage() {
               </div>
             </div>
             <div className="Projectcard inline-flex h-72 w-80 flex-col items-center justify-start gap-5 rounded-xl bg-gray-800 p-3">
-              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" />
+              <img className="Image2 h-40 w-80 rounded-lg" src="https://via.placeholder.com/306x156" alt="Image5" />
               <div className="Text flex h-20 flex-col items-center justify-start gap-2 self-stretch p-1">
                 <div className="Title self-stretch font-['Asap'] text-base font-bold leading-tight text-zinc-200">
                   Página de turismo

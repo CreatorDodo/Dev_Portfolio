@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 // import Link from 'next/link';
 import { Mail, Phone, Globe, Github, Facebook, Rss } from 'lucide-react';
-import PortfolioPageLayout from '../layouts/PortfolioPageLayout';
+import PortfolioPageLayout from '../layouts/PortfolioPageLayout.tsx';
 
 function PortfolioPage() {
   return (
@@ -69,20 +69,22 @@ function PortfolioPage() {
           <div className="space-y-8">
             {[
               {
+                id: 1,
                 company: '가이랩',
                 role: 'Frontend Developer',
                 period: '2020. 08 - 현재',
                 description: '유지보수하고 있습니다.',
               },
               {
+                id: 2,
                 company: '가이랩',
                 role: 'Frontend Developer',
                 period: '2020. 08 - 현재',
                 description: '프로젝트하고 있습니다.',
               },
               // Add more experiences as needed
-            ].map((exp, index) => (
-              <div key={index} className="rounded-lg bg-white p-6 shadow">
+            ].map((exp) => (
+              <div key={exp.id} className="rounded-lg bg-white p-6 shadow">
                 <h3 className="text-xl font-semibold text-gray-900">{exp.company}</h3>
                 <p className="text-gray-600">
                   {exp.role} | {exp.period}

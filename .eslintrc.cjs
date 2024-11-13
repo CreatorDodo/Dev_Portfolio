@@ -19,8 +19,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react', 'react-refresh'],
   rules: {
-    'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }],
-    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }], // JSX 파일 확장자를 .ts, .tsx로 제한
+    'react/react-in-jsx-scope': 'off', // React를 import하지 않아도 사용 가능
     'react/function-component-definition': [
       1,
       {
@@ -34,8 +34,8 @@ module.exports = {
         allowConstantExport: true, // 상수 값의 export를 허용
       },
     ],
-    'tailwindcss/no-custom-classname': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'tailwindcss/no-custom-classname': 'off', // Tailwind CSS 클래스 사용 가능
+    '@typescript-eslint/no-explicit-any': 'off', // any 타입 사용 가능
+    '@typescript-eslint/explicit-module-boundary-types': 'off', // 함수 반환 타입을 명시하지 않아도 됨
   },
 };
