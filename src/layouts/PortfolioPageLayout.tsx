@@ -1,11 +1,11 @@
-import { FC, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
 }
 
-const PortfolioPageLayout: FC<Props> = ({ children }) => {
+function PortfolioPageLayout({ children }: Props) {
   return <div className="min-h-screen bg-gray-50">{children}</div>;
-};
+}
 
 export default PortfolioPageLayout;
