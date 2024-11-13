@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 interface Project {
   name: string;
@@ -92,10 +92,10 @@ export default function ExperiencePage() {
   return (
     <div className="min-h-screen bg-white p-8">
       <div className="mx-auto max-w-4xl">
-        <Link href="/" className="mb-8 inline-flex items-center text-blue-600 hover:text-blue-800">
+        <a href="/" className="mb-8 inline-flex items-center text-blue-600 hover:text-blue-800">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Home
-        </Link>
+        </a>
 
         <h1 className="mb-8 text-4xl font-bold text-gray-900">My Experience</h1>
 
