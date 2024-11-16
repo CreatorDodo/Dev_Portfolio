@@ -19,6 +19,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react', 'react-refresh'],
   rules: {
+    'react/jsx-props-no-spreading': 'off', // props 전달을 위한 스프레드 문법 사용 가능
+    'react/require-default-props': 'off', // defaultProps를 사용하지 않아도 됨
     'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }], // JSX 파일 확장자를 .ts, .tsx로 제한
     'react/react-in-jsx-scope': 'off', // React를 import하지 않아도 사용 가능
     'react/function-component-definition': [

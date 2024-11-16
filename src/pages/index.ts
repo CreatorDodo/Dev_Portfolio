@@ -1,4 +1,4 @@
 import PortfolioPage from './PortfolioPage.tsx';
-import ExperiencePage from './ExperiencePage.tsx';
+import ProjectPage from './ProjectPage.tsx';
 
-export { PortfolioPage, ExperiencePage };
+export { PortfolioPage, ProjectPage };
