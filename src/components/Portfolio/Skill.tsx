@@ -73,7 +73,6 @@ function Skill() {
               <li className="text-gray-800">Vitest</li>
             </ul>
           </div>
-
           <div className="border-t pt-16 flex">
             <h3 className="text-2xl font-medium text-gray-500 w-72">Infrastructure & Databases</h3>
             <ul className="flex-1 grid grid-cols-3 gap-8 list-disc pl-5">
@@ -91,7 +90,6 @@ function Skill() {
               </li>
             </ul>
           </div>
-
           <div className="border-t pt-16 flex">
             <h3 className="text-2xl font-medium text-gray-500 w-72">Tools & IDEs</h3>
             <ul className="flex-1 grid grid-cols-3 gap-8 list-disc pl-5">
@@ -114,7 +112,6 @@ function Skill() {
               <li className="text-gray-800">Jira</li>
             </ul>
           </div>
-
           <div className="border-t pt-16 flex">
             <h3 className="text-2xl font-medium text-gray-500 w-72">AI Tools</h3>
             <ul className="flex-1 grid grid-cols-3 gap-8 list-disc pl-5">
@@ -126,6 +123,9 @@ function Skill() {
               </li>
               <li className="text-gray-800">
                 <RainbowText>GitHub Copilot</RainbowText>
+              </li>
+              <li className="text-gray-800">
+                <RainbowText>Vercel v0</RainbowText>
               </li>
               <li className="text-gray-800">DALL-E</li>
               <li className="text-gray-800">Perplexity</li>

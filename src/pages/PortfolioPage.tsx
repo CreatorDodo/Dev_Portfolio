@@ -6,7 +6,7 @@ import Contact from '../components/Portfolio/Contact.tsx';
 import Profile from '../components/Portfolio/Profile.tsx';
 import WorkExperience from '../components/Portfolio/WorkExperience.tsx';
 import OtherExperience from '../components/Portfolio/OtherExperience.tsx';
-// import Project from '../components/Portfolio/Project.tsx';
+import Project from '../components/Portfolio/Project.tsx';
 import Skill from '../components/Portfolio/Skill.tsx';
 
 function PortfolioPage() {
@@ -17,7 +17,7 @@ function PortfolioPage() {
         <Profile />
         <WorkExperience />
         <OtherExperience />
-        {/* <Project /> */}
+        <Project />
         <Skill />
         <Contact />
       </PortfolioPageLayout>
