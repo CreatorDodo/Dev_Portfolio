@@ -39,3 +39,42 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.swiper {
+  height: 450px !important; /* 명시적 높이 설정 */
+}
+
+.swiper-wrapper {
+  height: 100% !important;
+}
+
+.swiper-slide {
+  height: 95% !important;
+}
+
+/* Card와 내부 컴포넌트 높이 제어 */
+.swiper-slide > div {
+  /* Card */
+  height: 100% !important;
+}
+
+/* CardHeader 높이 */
+.swiper-slide > div > div:first-child {
+  height: 50% !important;
+}
+
+/* CardContent 높이 */
+.swiper-slide > div > div:nth-child(2) {
+  height: 10% !important;
+  overflow-y: auto !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0 !important;
+  &::after {
+    display: none; /* Swiper의 기본 화살표 아이콘 제거 */
+  }
+}
