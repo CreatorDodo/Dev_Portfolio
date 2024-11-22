@@ -1,3 +1,5 @@
+import scrollHandler from '@/utils/scrollHandler.ts';
+
 function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-blue-200">
@@ -6,17 +8,29 @@ function Header() {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a href="#about" className="text-blue-600 hover:text-blue-800">
+              <a
+                href="#profile"
+                className="text-blue-600 hover:text-blue-800"
+                onClick={scrollHandler({ sectionId: 'profile' })}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#experience" className="text-blue-600 hover:text-blue-800">
+              <a
+                href="#work-experience"
+                className="text-blue-600 hover:text-blue-800"
+                onClick={scrollHandler({ sectionId: 'work-experience' })}
+              >
                 Experience
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-blue-600 hover:text-blue-800">
+              <a
+                href="#contact"
+                className="text-blue-600 hover:text-blue-800"
+                onClick={scrollHandler({ sectionId: 'contact' })}
+              >
                 Contact
               </a>
             </li>

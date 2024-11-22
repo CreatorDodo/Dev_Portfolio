@@ -1,31 +1,28 @@
-import * as React from 'react';
+import React from 'react';
 
-const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className = '', ...props }, ref) => (
-    <div ref={ref} className={`rounded-lg border border-gray-200 bg-white ${className}`} {...props} />
-  ),
-);
-Card.displayName = 'Card';
+interface CardProps {
+  className?: string;
+  children: React.ReactNode;
+}
 
-const CardHeader = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className = '', ...props }, ref) => (
-    <div ref={ref} className={`flex flex-col space-y-1.5 p-6 ${className}`} {...props} />
-  ),
-);
-CardHeader.displayName = 'CardHeader';
+function Card({ className = '', children }: CardProps) {
+  return <div className={`bg-white shadow-md rounded-lg ${className}`}>{children}</div>;
+}
 
-const CardTitle = React.forwardRef<HTMLHeadingElement, React.HTMLAttributes<HTMLHeadingElement>>(
-  ({ className = '', children, ...props }, ref) => (
-    <h3 ref={ref} className={`text-lg font-semibold leading-none tracking-tight ${className}`} {...props}>
-      {children}
-    </h3>
-  ),
-);
-CardTitle.displayName = 'CardTitle';
+function CardHeader({ className = '', children }: CardProps) {
+  return <div className={`px-6 py-4 ${className}`}>{children}</div>;
+}
 
-const CardContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className = '', ...props }, ref) => <div ref={ref} className={`p-6 pt-0 ${className}`} {...props} />,
-);
-CardContent.displayName = 'CardContent';
+function CardContent({ className = '', children }: CardProps) {
+  return <div className={`px-6 py-4 ${className}`}>{children}</div>;
+}
 
-export { Card, CardHeader, CardTitle, CardContent };
+function CardFooter({ className = '', children }: CardProps) {
+  return <div className={`px-6 py-4 border-t ${className}`}>{children}</div>;
+}
+
+function CardTitle({ className = '', children }: CardProps) {
+  return <h3 className={`text-xl font-semibold ${className}`}>{children}</h3>;
+}
+
+export { Card, CardHeader, CardContent, CardFooter, CardTitle };

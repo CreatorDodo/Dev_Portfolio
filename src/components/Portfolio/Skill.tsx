@@ -1,26 +1,6 @@
 // TODO: Next.js Image 컴포넌트 사용시 이미지 경로 설정
 // import Image from 'next/image';
-import { useState, useEffect } from 'react';
-
-function RainbowText({ children }: { children: React.ReactNode }) {
-  const [hue, setHue] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHue((prevHue) => (prevHue + 1) % 360);
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <span
-      className="font-semibold transition-colors duration-300 ease-in-out"
-      style={{ color: `hsl(${hue}, 100%, 50%)` }}
-    >
-      {children}
-    </span>
-  );
-}
+import RainbowText from '@/components/common/RainbowText.tsx';
 
 function Skill() {
   return (

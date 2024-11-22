@@ -10,5 +10,5 @@ export default {
       mono: ['Pretendard-Regular', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [import('@tailwindcss/line-clamp')],
 };

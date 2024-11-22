@@ -18,6 +18,17 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
   parser: '@typescript-eslint/parser',
   plugins: ['react', 'react-refresh'],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+      // Vite 별칭을 인식하도록 추가
+      node: {
+        extensions: ['.ts', '.tsx'],
+      },
+    },
+  },
   rules: {
     'react/jsx-props-no-spreading': 'off', // props 전달을 위한 스프레드 문법 사용 가능
     'react/require-default-props': 'off', // defaultProps를 사용하지 않아도 됨
@@ -39,5 +50,6 @@ module.exports = {
     'tailwindcss/no-custom-classname': 'off', // Tailwind CSS 클래스 사용 가능
     '@typescript-eslint/no-explicit-any': 'off', // any 타입 사용 가능
     '@typescript-eslint/explicit-module-boundary-types': 'off', // 함수 반환 타입을 명시하지 않아도 됨
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };

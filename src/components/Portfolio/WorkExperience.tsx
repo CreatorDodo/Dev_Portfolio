@@ -1,4 +1,4 @@
-import Badge from '../common/Badge.tsx';
+import Badge from '@/components/common/Badge.tsx';
 
 function WorkExperience() {
   return (
