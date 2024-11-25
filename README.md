@@ -5,7 +5,7 @@
 - React, TypeScript
 - 상태 관리: React-Query, Zustand
 - 패키지 매니저: Pnpm
-- 빌드: Webpack, ESBuild, 
+- 빌드: Webpack, ESBuild,
 - 트랜스파일러: SWC
 - 테스트: Vitest, MSW
 - CI/CD: GitHub Actions
