@@ -1,8 +1,6 @@
 import { Calendar, GitBranch, Database, Cpu } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/common/Tabs.tsx';
 import Badge from '@/components/common/Badge.tsx';
-// TODO: next.js 설정 후 도입하기.
-// import Image from "next/image"
 
 export default function PortfolioPage() {
   return (

@@ -1,5 +1,3 @@
-// TODO: Next.js Image 컴포넌트 사용시 이미지 경로 설정
-// import Image from 'next/image';
 import RainbowText from '@/components/common/RainbowText.tsx';
 
 function Skill() {
