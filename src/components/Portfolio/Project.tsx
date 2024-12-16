@@ -1,8 +1,5 @@
-// TODO: Next.js Image 컴포넌트 사용시 이미지 경로 설정
-// import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -22,13 +19,13 @@ function Project() {
       image: '/taskSprints.png?height=400&width=600',
       tags: ['React'],
     },
-    {
-      id: 2,
-      title: 'Portfolio Project',
-      description: '[미완]',
-      image: '/dateLeaf.png?height=400&width=600',
-      tags: ['React'],
-    },
+    // {
+    //   id: 2,
+    //   title: 'Portfolio Project',
+    //   description: '[미완]',
+    //   image: '/dateLeaf.png?height=400&width=600',
+    //   tags: ['React'],
+    // },
     {
       id: 3,
       title: 'TaskSprints 팀 프로젝트',

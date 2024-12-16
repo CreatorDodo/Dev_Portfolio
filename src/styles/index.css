@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-reduced-motion: no-preference) {
-}
+/* @media (prefers-reduced-motion: no-preference) {
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -21,24 +21,39 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* color: #213547;
+    background-color: #ffffff; */
+    font-family: 'Pretendard', sans-serif; /* 커스텀 폰트 설정 */
   }
-  a:hover {
+  /* a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
-  }
+  } */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* color: #ffffff;
+    background-color: #213547; */
+    font-family: 'Pretendard', sans-serif; /* 커스텀 폰트 설정 */
+  }
+  /* a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #333333;
+  } */
 }
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+} */
 
 .swiper {
   height: 450px !important; /* 명시적 높이 설정 */
