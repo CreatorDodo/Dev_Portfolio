@@ -1,5 +1,6 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -113,10 +114,12 @@ function Project() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Button variant="ghost" className="text-primary hover:text-primary/80">
-                      자세히 보기
-                      <FaChevronRight className="w-3 h-3 ml-1" />
-                    </Button>
+                    <Link to="/project">
+                      <Button variant="ghost" className="text-primary hover:text-primary/80">
+                        자세히 보기
+                        <FaChevronRight className="w-3 h-3 ml-1" />
+                      </Button>
+                    </Link>
                   </CardFooter>
                 </Card>
               </SwiperSlide>
