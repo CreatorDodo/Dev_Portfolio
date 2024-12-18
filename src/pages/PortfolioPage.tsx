@@ -3,6 +3,7 @@ import PortfolioPageLayout from '@/layouts/PortfolioPageLayout.tsx';
 import Header from '@/components/common/Header.tsx';
 import Contact from '@/components/Portfolio/Contact.tsx';
 import Profile from '@/components/Portfolio/Profile.tsx';
+import NetworkCarousel from '@/components/Portfolio/NetworkCarousel.tsx';
 import WorkExperience from '@/components/Portfolio/WorkExperience.tsx';
 import OtherExperience from '@/components/Portfolio/OtherExperience.tsx';
 import Project from '@/components/Portfolio/Project.tsx';
@@ -54,6 +55,10 @@ function PortfolioPage() {
 
               <FadeInSection>
                 <Skill />
+              </FadeInSection>
+
+              <FadeInSection>
+                <NetworkCarousel />
               </FadeInSection>
 
               <FadeInSection>
