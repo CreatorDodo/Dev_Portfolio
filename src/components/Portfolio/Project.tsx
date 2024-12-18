@@ -15,23 +15,23 @@ function Project() {
   const projects = [
     {
       id: 1,
-      title: 'Side Project',
+      title: 'TodoFlow',
       description: '[미완]',
-      image: '/taskSprints.png?height=400&width=600',
+      image: '/ProjectImg/todoFlow.png?height=400&width=600',
       tags: ['React'],
     },
     // {
     //   id: 2,
     //   title: 'Portfolio Project',
     //   description: '[미완]',
-    //   image: '/dateLeaf.png?height=400&width=600',
+    //   image: '/ProjectImg/dateLeaf.png?height=400&width=600',
     //   tags: ['React'],
     // },
     {
       id: 3,
-      title: 'TaskSprints 팀 프로젝트',
+      title: 'SmartDeal',
       description: '경매 플랫폼 서비스',
-      image: '/taskSprints.png?height=400&width=600',
+      image: '/ProjectImg/smartDeal.png?height=400&width=600',
       tags: [
         'React',
         'TypeScript',
@@ -49,14 +49,14 @@ function Project() {
       id: 4,
       title: 'OSSCA[삼성전자 O-RAN]',
       description: '오픈소스 컨트리뷰션 아카데미에서 삼성전자 O-RAN 프로젝트에 참여하였습니다.',
-      image: '/o-RAN.png?height=400&width=600',
+      image: '/ProjectImg/o-RAN.png?height=400&width=600',
       tags: ['React', 'Javascript', 'Go', 'Python', 'Go', 'Gerrit', 'Jira'],
     },
     {
       id: 5,
       title: 'DateLeaf',
       description: '다수의 사람들과의 모임 시간을 보다 편리하게 계획하기 위한 일정 관리 프로그램',
-      image: '/dateLeaf.png?height=400&width=600',
+      image: '/ProjectImg/dateLeaf.png?height=400&width=600',
       tags: ['React', 'TypeScript', 'Supabase', 'React-Query', 'Tailwind', 'Zustand', 'daisyUI'],
     },
   ];
@@ -72,7 +72,17 @@ function Project() {
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={9}
-            slidesPerView={3}
+            slidesPerView={1}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 9,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 9,
+              },
+            }}
             navigation={{
               enabled: true,
               prevEl: '.swiper-button-prev',
@@ -96,7 +106,9 @@ function Project() {
                       alt={project.title}
                       width={300}
                       height={200}
-                      className="w-full h-48 object-cover rounded-t-lg"
+                      className={`w-full h-48 rounded-t-lg ${
+                        project.title === 'SmartDeal' ? 'object-contain bg-white' : 'object-cover'
+                      }`}
                     />
                   </CardHeader>
                   <CardContent className="flex-grow">

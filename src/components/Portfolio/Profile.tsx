@@ -3,7 +3,11 @@ function Profile() {
     <section id="profile" className="mb-28 text-center">
       <div className="mb-24 flex flex-col items-center md:flex-row md:items-start">
         <div className="w-full md:w-1/2 md:flex-shrink-0">
-          <img src="/profile.png" alt="Profile of 김도영" className="mx-auto rounded-full w-96 h-96 object-cover" />
+          <img
+            src="/PortfolioImg/profile.png"
+            alt="Profile of 김도영"
+            className="mx-auto rounded-full w-96 h-96 object-cover"
+          />
         </div>
 
         <div className="w-full md:w-1/2">
