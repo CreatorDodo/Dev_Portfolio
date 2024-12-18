@@ -29,7 +29,7 @@
   "icons": [
     {
       "purpose": "maskable",
-      "sizes": "500x500",
+      "sizes": "512x512",
       "src": "maskable_icon.png",
       "type": "image/png"
     },
