@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/project',
+    path: '/project/:id',
     element: <ProjectPage />,
   },
   // {
