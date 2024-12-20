@@ -221,7 +221,7 @@ function NetworkCarousel() {
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex -ml-4">
             {slides.map((slide) => (
-              <div key={slide.title} className="flex-[0_0_100%] min-w-0 pl-4 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
+              <div key={slide.image} className="flex-[0_0_100%] min-w-0 pl-4 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
                 <div
                   className={`h-[300px] rounded-2xl bg-gradient-to-r ${slide.gradient} p-4 flex flex-col overflow-hidden`}
                 >
@@ -260,7 +260,7 @@ function NetworkCarousel() {
         <div className="flex justify-center mt-4">
           {slides.map((slide, index) => (
             <Button
-              key={slide.title}
+              key={slide.image}
               variant="ghost"
               size="sm"
               className={`w-3 h-3 rounded-full mx-1 p-0 ${index === selectedIndex ? 'bg-primary' : 'bg-muted'}`}

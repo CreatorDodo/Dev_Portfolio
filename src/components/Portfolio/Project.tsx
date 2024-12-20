@@ -10,57 +10,9 @@ import Badge from '@/components/common/Badge.tsx';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/common/Card.tsx';
 import Button from '@/components/common/Button.tsx';
 import CircleButton from '@/components/common/CircleButton.tsx';
+import projects from '@/data/projects.ts';
 
 function Project() {
-  const projects = [
-    {
-      id: 1,
-      title: 'TodoFlow',
-      description: '[미완]',
-      image: '/ProjectImg/todoFlow.png?height=400&width=600',
-      tags: ['React'],
-    },
-    // {
-    //   id: 2,
-    //   title: 'Portfolio Project',
-    //   description: '[미완]',
-    //   image: '/ProjectImg/dateLeaf.png?height=400&width=600',
-    //   tags: ['React'],
-    // },
-    {
-      id: 3,
-      title: 'SmartDeal',
-      description: '경매 플랫폼 서비스',
-      image: '/ProjectImg/smartDeal.png?height=400&width=600',
-      tags: [
-        'React',
-        'TypeScript',
-        'Tailwind',
-        'Zustand',
-        'Ant Design',
-        'Vite',
-        'Vitest',
-        'Spring-Boot',
-        'JPA',
-        'JUnit',
-      ],
-    },
-    {
-      id: 4,
-      title: 'OSSCA[삼성전자 O-RAN]',
-      description: '오픈소스 컨트리뷰션 아카데미에서 삼성전자 O-RAN 프로젝트에 참여하였습니다.',
-      image: '/ProjectImg/o-RAN.png?height=400&width=600',
-      tags: ['React', 'Javascript', 'Go', 'Python', 'Go', 'Gerrit', 'Jira'],
-    },
-    {
-      id: 5,
-      title: 'DateLeaf',
-      description: '다수의 사람들과의 모임 시간을 보다 편리하게 계획하기 위한 일정 관리 프로그램',
-      image: '/ProjectImg/dateLeaf.png?height=400&width=600',
-      tags: ['React', 'TypeScript', 'Supabase', 'React-Query', 'Tailwind', 'Zustand', 'daisyUI'],
-    },
-  ];
-
   return (
     <section id="skill" className="w-full py-12 border-b">
       <div className="container px-10 mx-auto relative">
@@ -125,14 +77,16 @@ function Project() {
                       {project.tags.length > 3 && <Badge variant="secondary">+{project.tags.length - 3}</Badge>}
                     </div>
                   </CardContent>
-                  <CardFooter>
-                    <Link to="/project">
-                      <Button variant="ghost" className="text-primary hover:text-primary/80">
-                        자세히 보기
-                        <FaChevronRight className="w-3 h-3 ml-1" />
-                      </Button>
-                    </Link>
-                  </CardFooter>
+                  {project.description !== '[미완]' && (
+                    <CardFooter>
+                      <Link to={`/project/${project.id}`}>
+                        <Button variant="ghost" className="text-primary hover:text-primary/80">
+                          자세히 보기
+                          <FaChevronRight className="w-3 h-3 ml-1" />
+                        </Button>
+                      </Link>
+                    </CardFooter>
+                  )}
                 </Card>
               </SwiperSlide>
             ))}
