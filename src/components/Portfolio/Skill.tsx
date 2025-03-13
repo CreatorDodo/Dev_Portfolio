@@ -40,8 +40,7 @@ function Skill() {
               <li className="text-gray-800">Spring</li>
               <li className="text-gray-800">MyBatis</li>
               <li className="text-gray-800">Node.js</li>
-              {/* TODO: 완전히 배우면 넣자 */}
-              {/* <li className="text-gray-800">Next.js</li> */}
+              <li className="text-gray-800">Next.js</li>
               <li className="text-gray-800">Express.js</li>
               <li className="text-gray-800">Bootstrap</li>
               <li className="text-gray-800">
@@ -102,6 +101,9 @@ function Skill() {
               </li>
               <li className="text-gray-800">
                 <RainbowText>Claude</RainbowText>
+              </li>
+              <li className="text-gray-800">
+                <RainbowText>Cursor</RainbowText>
               </li>
               <li className="text-gray-800">
                 <RainbowText>GitHub Copilot</RainbowText>
