@@ -111,8 +111,7 @@ function Skill() {
               <li className="text-gray-800">
                 <RainbowText>Vercel v0</RainbowText>
               </li>
-              <li className="text-gray-800">DALL-E</li>
-              <li className="text-gray-800">Perplexity</li>
+              <li className="text-gray-800">Grok</li>
             </ul>
           </div>
         </div>
